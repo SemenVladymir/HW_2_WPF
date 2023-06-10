@@ -1,0 +1,133 @@
+﻿<Window x:Class="HW_2_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW_2_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="1400">
+    <Grid Background="#FF444444">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="25*"></RowDefinition>
+            <RowDefinition Height="25*"></RowDefinition>
+            <RowDefinition Height="100*"></RowDefinition>
+            <RowDefinition Height="100*"></RowDefinition>
+            <RowDefinition Height="100*"></RowDefinition>
+            <RowDefinition Height="50*"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="30*"></ColumnDefinition>
+            <ColumnDefinition Width="30*"></ColumnDefinition>
+            <ColumnDefinition Width="30*"></ColumnDefinition>
+            <ColumnDefinition Width="30*"></ColumnDefinition>
+            <ColumnDefinition Width="300*"></ColumnDefinition>
+            <ColumnDefinition Width="30*"></ColumnDefinition>
+            <ColumnDefinition Width="30*"></ColumnDefinition>
+            <ColumnDefinition Width="40*"></ColumnDefinition>
+            <ColumnDefinition Width="40*"></ColumnDefinition>
+            <ColumnDefinition Width="30*"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" Style="{StaticResource ResourceKey=PinkLbl}" Content="11"/>
+        <Label Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" FontSize="25" Style="{StaticResource ResourceKey=BlackLbl}" Content="Eleven"/>
+        <Label Grid.Row="2" Grid.Column="2" Style="{StaticResource ResourceKey=GrayLbl}" Content="change"/>
+        <Label Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2"  HorizontalContentAlignment="Center" Style="{StaticResource ResourceKey=BlackLbl}" Content="Eleven"/>
+        <Label Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="4"  Style="{StaticResource ResourceKey=BlueLbl}" Content="Point of sale"/>
+        <Label Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource ResourceKey=BlueLbl}" Content="Clients"/>
+        <Label Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2" Style="{StaticResource ResourceKey=BlueLbl}" Content="Expenses"/>
+        <Label Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource ResourceKey=BlueLbl}" Content="Restocking"/>
+        <Label Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="2" Style="{StaticResource ResourceKey=BlueLbl}" Content="Schedule"/>
+        <Label Grid.Row="3" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="6" Margin="15, 5, 5, 5" Background="#FF7ABACA"/>
+
+        <Label Grid.Row="6" Grid.Column="1" Style="{StaticResource ResourceKey=BlueLbl}"/>
+        <Label Grid.Row="6" Grid.Column="2" Style="{StaticResource ResourceKey=BlueLbl}"/>
+        <Label Grid.Row="6" Grid.Column="3" Style="{StaticResource ResourceKey=BlueLbl}"/>
+        <Label Grid.Row="6" Grid.Column="4" Style="{StaticResource ResourceKey=BlueLbl}"/>
+
+        <Label Grid.Row="1" Grid.Column="8" Style="{StaticResource ResourceKey=ThinBlackLbl}" Content="00:00:00"/>
+        <Label Grid.Row="2" Grid.Column="8" Style="{StaticResource ResourceKey=GrayLbl}" Content="start"/>
+        <Label Grid.Row="2" Grid.Column="9" Background="#FFDA7979" Style="{StaticResource ResourceKey=GrayLbl}" Content="logout"/>
+        <Label Grid.Row="1" Grid.Column="9" Foreground="Gray" Style="{StaticResource ResourceKey=ThinBlackLbl}" Content="GymRealm"/>
+
+        <Image Grid.Column="6" Margin="13,9,64,14" RenderTransformOrigin="0.606,1.238" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2"  >
+            <Image.Source>
+                <FormatConvertedBitmap Source="Images\Question.png"  />
+            </Image.Source>
+        </Image>
+        <Image Grid.Column="7" Margin="4,10,3,14" RenderTransformOrigin="0.606,1.238" Grid.Row="1" Grid.RowSpan="2"  >
+            <Image.Source>
+                <FormatConvertedBitmap Source="Images\Clock.png"  />
+            </Image.Source>
+        </Image>
+        <Image Grid.Column="9" Margin="87,1,0,147" RenderTransformOrigin="0.606,1.238" Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="2"  >
+            <Image.Source>
+                <FormatConvertedBitmap Source="Images\LogOut.png"  />
+            </Image.Source>
+        </Image>
+        <Image Grid.Column="2" Margin="69,37,29,5" RenderTransformOrigin="0.606,1.238" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2"  >
+            <Image.Source>
+                <FormatConvertedBitmap Source="Images\Undo.png"  />
+            </Image.Source>
+        </Image>
+        <Image Grid.ColumnSpan="2" Grid.Column="1" Margin="17,4,20,12" RenderTransformOrigin="0.606,1.238" Grid.Row="3"  >
+            <Image.Source>
+                <FormatConvertedBitmap Source="Images\Kassa.png"  />
+            </Image.Source>
+        </Image>
+        <Image Grid.ColumnSpan="4" Grid.Column="2" Margin="69,10,691,18" RenderTransformOrigin="0.606,1.238" Grid.Row="3"  >
+            <Image.Source>
+                <FormatConvertedBitmap Source="Images\Text1.png"  />
+            </Image.Source>
+        </Image>
+        <Image Grid.ColumnSpan="2" Grid.Column="1" Margin="31,145,26,22" RenderTransformOrigin="0.606,1.238" Grid.Row="3" Grid.RowSpan="2"  >
+            <Image.Source>
+                <FormatConvertedBitmap Source="Images\Clients.png"  />
+            </Image.Source>
+        </Image>
+        <Image Grid.ColumnSpan="2" Grid.Column="3" Margin="35,20,31,45" RenderTransformOrigin="0.606,1.238" Grid.Row="4"  >
+            <Image.Source>
+                <FormatConvertedBitmap Source="Images\Expenses.png"  />
+            </Image.Source>
+        </Image>
+        <Image Grid.ColumnSpan="2" Grid.Column="1" Margin="31,5,31,28" RenderTransformOrigin="0.606,1.238" Grid.Row="5"  >
+            <Image.Source>
+                <FormatConvertedBitmap Source="Images\Car3.png"  />
+            </Image.Source>
+        </Image>
+        <Image Grid.ColumnSpan="2" Grid.Column="3" Margin="30,21,30,41" RenderTransformOrigin="0.606,1.238" Grid.Row="5"  >
+            <Image.Source>
+                <FormatConvertedBitmap Source="Images\Calendar.png"  />
+            </Image.Source>
+        </Image>
+        <Image Grid.Column="1" Margin="5,12,5,12" RenderTransformOrigin="0.606,1.238" Grid.Row="6"  >
+            <Image.Source>
+                <FormatConvertedBitmap Source="Images\Note.png"  />
+            </Image.Source>
+        </Image>
+        <Image Grid.Column="1" Margin="64,10,64,12" RenderTransformOrigin="0.606,1.238" Grid.Row="6" Grid.ColumnSpan="3"  >
+            <Image.Source>
+                <FormatConvertedBitmap Source="Images\Containers.png"  />
+            </Image.Source>
+        </Image>
+        <Image Grid.Column="3" Margin="1,6,0,10" RenderTransformOrigin="0.606,1.238" Grid.Row="6"  >
+            <Image.Source>
+                <FormatConvertedBitmap Source="Images\Schedul.png"  />
+            </Image.Source>
+        </Image>
+        <Image Grid.Column="4" Margin="4,12,4,10" RenderTransformOrigin="0.606,1.238" Grid.Row="6"  >
+            <Image.Source>
+                <FormatConvertedBitmap Source="Images\Setting.png"  />
+            </Image.Source>
+        </Image>
+        <Image Grid.Column="8" Margin="24,16,5,-58" RenderTransformOrigin="0.606,1.238" Grid.Row="6" Grid.ColumnSpan="3" Grid.RowSpan="2"  >
+            <Image.Source>
+                <FormatConvertedBitmap Source="Images\Text.png"  />
+            </Image.Source>
+        </Image>
+
+    </Grid>
+</Window>

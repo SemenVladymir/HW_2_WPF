@@ -1,0 +1,45 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="BlueLbl" TargetType="Label">
+        <Setter Property="Background" Value="#FF3799B1"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="VerticalContentAlignment" Value="Bottom"/>
+        <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+        <Setter Property="Margin" Value="5, 5, 5, 5"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="TextBlock.FontWeight" Value="Bold"/>
+        <Setter Property="TextBlock.FontFamily" Value="Calibri"/>
+    </Style>
+
+    <Style x:Key="PinkLbl" BasedOn="{StaticResource ResourceKey=BlueLbl}" TargetType="Label">
+        <Setter Property="Background" Value="#FFDB0B83"/>
+        <Setter Property="FontSize" Value="65"/>
+        <Setter Property="Padding" Value="2, -10"/>
+        <Setter Property="TextBlock.FontWeight" Value="Normal"/>
+        <Setter Property="TextBlock.FontFamily" Value="Times new roman"/>
+    </Style>
+
+    <Style x:Key="GrayLbl" BasedOn="{StaticResource ResourceKey=BlueLbl}" TargetType="Label">
+        <Setter Property="Background" Value="#FF737373"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+    </Style>
+
+
+    <Style x:Key="BlackLbl" BasedOn="{StaticResource ResourceKey=BlueLbl}" TargetType="Label">
+        <Setter Property="Background" Value="#FF444444"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="Padding" Value="2, -2"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="TextBlock.FontWeight" Value="Normal"/>
+    </Style>
+    <Style x:Key="ThinBlackLbl" BasedOn="{StaticResource ResourceKey=BlackLbl}" TargetType="Label">
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Bottom"/>
+        <Setter Property="Padding" Value="0, 0, 0, -10"/>
+        <Setter Property="Foreground" Value="#FF5797A6"/>
+    </Style>
+</ResourceDictionary>
